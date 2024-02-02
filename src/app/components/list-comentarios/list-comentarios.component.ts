@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { Comentario } from '../../interfaces/Comentario';
 import { CommonModule } from '@angular/common'; // para poder usar *ngFor / *ngIf
+import { RouterModule } from '@angular/router'; // para poder usar 'routerLink', etc
 
 @Component({
   selector: 'app-list-comentarios',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule],
   templateUrl: './list-comentarios.component.html',
   styleUrl: './list-comentarios.component.css'
 })
