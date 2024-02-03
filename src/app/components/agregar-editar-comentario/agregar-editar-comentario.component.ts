@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { Comentario } from '../../interfaces/Comentario';
+import { CommonModule } from '@angular/common';
 import { FormsModule, FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-agregar-editar-comentario',
   standalone: true,
-  imports: [RouterModule, ReactiveFormsModule, FormsModule],
+  imports: [RouterModule, ReactiveFormsModule, FormsModule, CommonModule],
   templateUrl: './agregar-editar-comentario.component.html',
   styleUrl: './agregar-editar-comentario.component.css'
 })
